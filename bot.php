@@ -19,7 +19,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => 'Hello from line bot'
+				//'text' => $text
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
@@ -40,7 +41,7 @@ if (!is_null($events['events'])) {
 			$result = curl_exec($ch);
 			curl_close($ch);
 
-			echo "Hello from line bot";
+			echo $result . "\r\n";
 		}
 	}
 }
