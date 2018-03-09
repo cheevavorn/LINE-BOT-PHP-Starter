@@ -41,7 +41,7 @@ if (!is_null($events['events'])) {
 				
 				// image
 				"type" => "imagemap",
-				"baseUrl" => "https://example.com/bot/images/rm001",
+				"baseUrl" => "http://blog.room34.com/wp-content/uploads/underdog/logo.thumbnail.png",
 				"altText" => "This is an imagemap",
 				"baseSize" => array(
 					"height"=> 1040,
