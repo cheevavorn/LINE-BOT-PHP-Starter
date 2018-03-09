@@ -1,15 +1,6 @@
 <?php
 $access_token = 'VXdNfb6gCuFsxYvfjvSIP0eO/Vt+6I6vy5Fy+kSkTyh5/lDJxgWe2LJWnZ2bD0HKK0ensLVlYgQgZgjY4tMb8ENo/gvJZXUfi2dGF9DGNgq38+4EIV8HF4Myi3msvqOroJXBppZYoiL38MWhAU3QUwdB04t89/1O/w1cDnyilFU=';
 
-function generateRandomString($length = 10, $characters) {
-    $charactersLength = strlen($characters);
-    $randomString = '';
-    for ($i = 0; $i < $length; $i++) {
-        $randomString .= $characters[rand(0, $charactersLength - 1)];
-    }
-    return $randomString;
-}
-
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -28,8 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => generateRandomString(10, $text)
-				//'text' => $text
+				'text' => $text
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
