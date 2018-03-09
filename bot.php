@@ -32,11 +32,42 @@ if (!is_null($events['events'])) {
 				// "originalContentUrl" => "https://www.nature.com/polopoly_fs/7.44180.1495028629!/image/WEB_GettyImages-494098244.jpg_gen/derivatives/landscape_630/WEB_GettyImages-494098244.jpg",
 				// "previewImageUrl" => "http://blog.room34.com/wp-content/uploads/underdog/logo.thumbnail.png"
 			
-				"type" => "location",
-				"title"=> "my location",
-				"address"=> "〒150-0002 東京都渋谷区渋谷２丁目２１−１",
-				"latitude"=> 35.65910807942215,
-				"longitude"=> 139.70372892916203
+				// location
+				// "type" => "location",
+				// "title"=> "my location",
+				// "address"=> "〒150-0002 東京都渋谷区渋谷２丁目２１−１",
+				// "latitude"=> 35.65910807942215,
+				// "longitude"=> 139.70372892916203
+				
+				// image
+				"type" => "imagemap",
+				"baseUrl" => "https://example.com/bot/images/rm001",
+				"altText" => "This is an imagemap",
+				"baseSize" => array(
+					"height"=> 1040,
+					"width"=> 1040
+				),
+				"actions" => array(
+					array(
+						"type" => "uri",
+						"linkUri" => "https://example.com/",
+						"area"=> array(
+							"x" => 0,
+							"y"=> 0,
+							"width"=> 520,
+							"height"=> 1040
+						)
+					),array(
+						"type" => "message",
+          				"text" => "Hello",
+						"area"=> array(
+							"x" => 520,
+							"y"=> 0,
+							"width"=> 520,
+							"height"=> 1040
+						)
+					)
+				)
 			);
 
 			// Make a POST Request to Messaging API to reply to sender
