@@ -19,13 +19,17 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = array(
 				// emoji text
-				'type' => 'message',
-				'text' => ' LINE emoji'
+				// 'type' => 'message',
+				// 'text' => ' LINE emoji'
 
 				// sticker
 				// "type" => "sticker",
 				// "packageId" => "1",
 				// "stickerId" => "1"
+
+				"type" => "image",
+				"originalContentUrl" => "https://www.nature.com/polopoly_fs/7.44180.1495028629!/image/WEB_GettyImages-494098244.jpg_gen/derivatives/landscape_630/WEB_GettyImages-494098244.jpg",
+				"previewImageUrl" => "http://blog.room34.com/wp-content/uploads/underdog/logo.thumbnail.png"
 			);
 
 			// Make a POST Request to Messaging API to reply to sender
