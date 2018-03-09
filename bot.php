@@ -19,7 +19,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'message',
-				'id' => '325708'
+				// emoji text
+				'text' => '\uDBC0\uDC84 LINE emoji'
 			];
 			// $messages = [
 			// 	'type' => 'text',
