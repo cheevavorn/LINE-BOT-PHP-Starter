@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'image',
-				'text' => '7598060490135'
+				'id' => '7598060490135'
 			];
 			// $messages = [
 			// 	'type' => 'text',
