@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			$messages = array(
 				// emoji text
 				'type' => 'message',
-				'text' => '\uDBC0\uDC84 LINE emoji'
+				'text' => ' LINE emoji'
 
 				// sticker
 				// "type" => "sticker",
