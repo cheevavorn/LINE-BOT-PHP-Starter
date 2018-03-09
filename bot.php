@@ -41,7 +41,7 @@ if (!is_null($events['events'])) {
 				
 				// image
 				"type" => "imagemap",
-				"baseUrl" => "http://blog.room34.com/wp-content/uploads/underdog/logo.thumbnail.png",
+				"baseUrl" => "https://github.com/line/line-bot-sdk-go/blob/master/examples/kitchensink/static/rich/460",
 				"altText" => "This is an imagemap",
 				"baseSize" => array(
 					"height"=> 1040,
