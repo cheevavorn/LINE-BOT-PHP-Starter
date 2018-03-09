@@ -27,9 +27,16 @@ if (!is_null($events['events'])) {
 				// "packageId" => "1",
 				// "stickerId" => "1"
 
-				"type" => "image",
-				"originalContentUrl" => "https://www.nature.com/polopoly_fs/7.44180.1495028629!/image/WEB_GettyImages-494098244.jpg_gen/derivatives/landscape_630/WEB_GettyImages-494098244.jpg",
-				"previewImageUrl" => "http://blog.room34.com/wp-content/uploads/underdog/logo.thumbnail.png"
+				// image
+				// "type" => "image",
+				// "originalContentUrl" => "https://www.nature.com/polopoly_fs/7.44180.1495028629!/image/WEB_GettyImages-494098244.jpg_gen/derivatives/landscape_630/WEB_GettyImages-494098244.jpg",
+				// "previewImageUrl" => "http://blog.room34.com/wp-content/uploads/underdog/logo.thumbnail.png"
+			
+				"type" => "location",
+				"title"=> "my location",
+				"address"=> "〒150-0002 東京都渋谷区渋谷２丁目２１−１",
+				"latitude"=> 35.65910807942215,
+				"longitude"=> 139.70372892916203
 			);
 
 			// Make a POST Request to Messaging API to reply to sender
