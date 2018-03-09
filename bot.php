@@ -18,14 +18,15 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				'type' => 'message',
 				// emoji text
-				'text' => '\uDBC0\uDC84 LINE emoji'
+				// 'type' => 'message',
+				// 'text' => '\uDBC0\uDC84 LINE emoji'
+
+				// sticker
+				"type" => "sticker",
+				"packageId" => "1",
+				"stickerId" => "1"
 			];
-			// $messages = [
-			// 	'type' => 'text',
-			// 	'text' => $text
-			// ];
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
