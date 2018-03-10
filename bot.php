@@ -40,33 +40,103 @@ if (!is_null($events['events'])) {
 				// "longitude"=> 139.70372892916203
 				
 				// image
-				"type" => "imagemap",
-				"baseUrl" => "http://lark-trip.com/wp-content/uploads/2014/12/45210_201310311522151lnzy_thumb.jpg?_ignored=",
-				"altText" => "This is an imagemap",
-				"baseSize" => array(
-					"height"=> 405,
-					"width"=> 405
-				),
-				"actions" => array(
-					array(
-						"type" => "uri",
-						"linkUri" => "https://example.com/",
-						"area"=> array(
-							"x" => 0,
-							"y"=> 0,
-							"width"=> 520,
-							"height"=> 1040
+				// "type" => "template",
+ 				// "altText" => "this is a carousel template",
+				// "template" => array(
+				// 	"type" => "carousel",
+				// 	"columns" => array(
+				// 		"thumbnailImageUrl"=> "https://example.com/bot/images/item1.jpg",
+				// 		"imageBackgroundColor"=> "#FFFFFF",
+				// 		"title"=> "this is menu",
+				// 		"text"=> "description",
+				// 		"defaultAction"=> array(
+				// 			"type"=> "uri",
+				// 			"label"=> "View detail",
+				// 			"uri"=> "http://www.pea.co.th"
+				// 		),"actions" => array(
+				// 			array(
+				// 				"type"=> "postback",
+                //     			"label"=> "วิสัยทัศน์",
+                //     			"data"=> "เกี่ยวกับเรา/วิสัยทัศน์-ภารกิจ-ค่านิยม"
+				// 			),
+				// 			array(
+				// 				"type"=> "postback",
+                //     			"label"=> "คณะกรรมการ",
+                //     			"data"=> "เกี่ยวกับเรา/คณะกรรมการและผู้บริหาร/คณะกรรมการ"
+				// 			),
+				// 			array(
+				// 				"type"=> "uri",
+				// 				"label"=> "View detail",
+				// 				"uri"=> "http://example.com/page/111"
+				// 			)
+				// 		)
+				// 	)
+				// )
+
+				"type"=> "template",
+				"altText"=> "this is a carousel template",
+				"template" => array(
+					"type"=> "carousel",
+					"columns"=> [
+						array(
+							"thumbnailImageUrl"=> "https://source.unsplash.com/WLUHO9A_xik",
+							"imageBackgroundColor"=> "#FFFFFF",
+							"title"=> "this is menu",
+							"text"=> "description",
+							"defaultAction"=> array(
+								"type"=> "uri",
+								"label"=> "View detail",
+								"uri"=> "http://example.com/page/123"
+							),
+							"actions"=> [
+								array(
+									"type"=> "postback",
+									"label"=> "Buy",
+									"data"=> "action=buy&itemid=111"
+								),
+								array(
+									"type"=> "postback",
+									"label"=> "Add to cart",
+									"data"=> "action=add&itemid=111"
+								),
+								array(
+									"type"=> "uri",
+									"label"=> "View detail",
+									"uri"=> "http://example.com/page/111"
+								)
+							]
+						),
+						array(
+							"thumbnailImageUrl"=> "https://source.unsplash.com/collection/190727",
+							"imageBackgroundColor"=> "#000000",
+							"title"=> "this is menu",
+							"text"=> "description",
+							"defaultAction"=> array(
+								"type"=> "uri",
+								"label"=> "View detail",
+								"uri"=> "http://example.com/page/222"
+							),
+							"actions"=> [
+								array(
+									"type"=> "postback",
+									"label"=> "Buy",
+									"data"=> "action=buy&itemid=222"
+								),
+								array(
+									"type"=> "postback",
+									"label"=> "Add to cart",
+									"data"=> "action=add&itemid=222"
+								),
+								array(
+									"type"=> "uri",
+									"label"=> "View detail",
+									"uri"=> "http://example.com/page/222"
+								)
+							]
 						)
-					),array(
-						"type" => "message",
-          				"text" => "Hello",
-						"area"=> array(
-							"x" => 520,
-							"y"=> 0,
-							"width"=> 520,
-							"height"=> 1040
-						)
-					)
+					],
+					"imageAspectRatio"=> "rectangle",
+					"imageSize"=> "cover"
 				)
 			);
 
