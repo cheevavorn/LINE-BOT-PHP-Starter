@@ -131,7 +131,6 @@ if (!is_null($events['events'])) {
 									"uri"=> "http://example.com/page/222"
 								)
 							]
-						)
 						),
 						array(
 							"thumbnailImageUrl"=> "https://source.unsplash.com/collection/190720",
