@@ -39,36 +39,32 @@ if (!is_null($events['events'])) {
 				// "latitude"=> 35.65910807942215,
 				// "longitude"=> 139.70372892916203
 				
-				// image
-				"type" => "template",
- 				"altText" => "this is a carousel template",
-				"template" => array(
-					"type" => "carousel",
-					"columns" => array(
-						"thumbnailImageUrl"=> "https://source.unsplash.com/collection/190727",
-						"imageBackgroundColor"=> "#FFFFFF",
-						"title"=> "this is menu",
-						"text"=> "description",
-						"defaultAction"=> array(
-							"type"=> "uri",
-							"label"=> "View detail",
-							"uri"=> "http://www.pea.co.th"
-						),"actions" => array(
-							array(
-								"type"=> "postback",
-                    			"label"=> "วิสัยทัศน์",
-                    			"data"=> "เกี่ยวกับเรา/วิสัยทัศน์-ภารกิจ-ค่านิยม"
-							),
-							array(
-								"type"=> "postback",
-                    			"label"=> "คณะกรรมการ",
-                    			"data"=> "เกี่ยวกับเรา/คณะกรรมการและผู้บริหาร/คณะกรรมการ"
-							),
-							array(
-								"type"=> "uri",
-								"label"=> "View detail",
-								"uri"=> "http://example.com/page/111"
-							)
+				"type"=> "imagemap",
+				"baseUrl"=> "https://source.unsplash.com/random",
+				"altText"=> "This is an imagemap",
+				"baseSize"=> array(
+					"height"=> 1040,
+					"width"=> 1040
+				),
+				"actions"=> array(
+					array(
+						"type"=> "uri",
+						"linkUri"=> "https://pea.co.th/",
+						"area"=> array(
+							"x"=> 0,
+							"y"=> 0,
+							"width"=> 520,
+							"height"=> 1040
+						)
+					),
+					array(
+						"type"=> "message",
+						"text"=> "Hello",
+						"area"=> array(
+							"x"=> 520,
+							"y"=> 0,
+							"width"=> 520,
+							"height"=> 1040
 						)
 					)
 				)
