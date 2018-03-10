@@ -40,104 +40,105 @@ if (!is_null($events['events'])) {
 				// "longitude"=> 139.70372892916203
 				
 				// image
-				// "type" => "template",
- 				// "altText" => "this is a carousel template",
+				"type" => "template",
+ 				"altText" => "this is a carousel template",
+				"template" => array(
+					"type" => "carousel",
+					"columns" => array(
+						"thumbnailImageUrl"=> "https://source.unsplash.com/collection/190727",
+						"imageBackgroundColor"=> "#FFFFFF",
+						"title"=> "this is menu",
+						"text"=> "description",
+						"defaultAction"=> array(
+							"type"=> "uri",
+							"label"=> "View detail",
+							"uri"=> "http://www.pea.co.th"
+						),"actions" => array(
+							array(
+								"type"=> "postback",
+                    			"label"=> "วิสัยทัศน์",
+                    			"data"=> "เกี่ยวกับเรา/วิสัยทัศน์-ภารกิจ-ค่านิยม"
+							),
+							array(
+								"type"=> "postback",
+                    			"label"=> "คณะกรรมการ",
+                    			"data"=> "เกี่ยวกับเรา/คณะกรรมการและผู้บริหาร/คณะกรรมการ"
+							),
+							array(
+								"type"=> "uri",
+								"label"=> "View detail",
+								"uri"=> "http://example.com/page/111"
+							)
+						)
+					)
+				)
+
+				// template
+				// "type"=> "template",
+				// "altText"=> "this is a carousel template",
 				// "template" => array(
-				// 	"type" => "carousel",
-				// 	"columns" => array(
-				// 		"thumbnailImageUrl"=> "https://example.com/bot/images/item1.jpg",
-				// 		"imageBackgroundColor"=> "#FFFFFF",
-				// 		"title"=> "this is menu",
-				// 		"text"=> "description",
-				// 		"defaultAction"=> array(
-				// 			"type"=> "uri",
-				// 			"label"=> "View detail",
-				// 			"uri"=> "http://www.pea.co.th"
-				// 		),"actions" => array(
-				// 			array(
-				// 				"type"=> "postback",
-                //     			"label"=> "วิสัยทัศน์",
-                //     			"data"=> "เกี่ยวกับเรา/วิสัยทัศน์-ภารกิจ-ค่านิยม"
-				// 			),
-				// 			array(
-				// 				"type"=> "postback",
-                //     			"label"=> "คณะกรรมการ",
-                //     			"data"=> "เกี่ยวกับเรา/คณะกรรมการและผู้บริหาร/คณะกรรมการ"
-				// 			),
-				// 			array(
+				// 	"type"=> "carousel",
+				// 	"columns"=> [
+				// 		array(
+				// 			"thumbnailImageUrl"=> "https://source.unsplash.com/WLUHO9A_xik",
+				// 			"imageBackgroundColor"=> "#FFFFFF",
+				// 			"title"=> "this is menu",
+				// 			"text"=> "description",
+				// 			"defaultAction"=> array(
 				// 				"type"=> "uri",
 				// 				"label"=> "View detail",
-				// 				"uri"=> "http://example.com/page/111"
-				// 			)
+				// 				"uri"=> "http://example.com/page/123"
+				// 			),
+				// 			"actions"=> [
+				// 				array(
+				// 					"type"=> "postback",
+				// 					"label"=> "Buy",
+				// 					"data"=> "action=buy&itemid=111"
+				// 				),
+				// 				array(
+				// 					"type"=> "postback",
+				// 					"label"=> "Add to cart",
+				// 					"data"=> "action=add&itemid=111"
+				// 				),
+				// 				array(
+				// 					"type"=> "uri",
+				// 					"label"=> "View detail",
+				// 					"uri"=> "http://example.com/page/111"
+				// 				)
+				// 			]
+				// 		),
+				// 		array(
+				// 			"thumbnailImageUrl"=> "https://source.unsplash.com/collection/190727",
+				// 			"imageBackgroundColor"=> "#000000",
+				// 			"title"=> "this is menu",
+				// 			"text"=> "description",
+				// 			"defaultAction"=> array(
+				// 				"type"=> "uri",
+				// 				"label"=> "View detail",
+				// 				"uri"=> "http://example.com/page/222"
+				// 			),
+				// 			"actions"=> [
+				// 				array(
+				// 					"type"=> "postback",
+				// 					"label"=> "Buy",
+				// 					"data"=> "action=buy&itemid=222"
+				// 				),
+				// 				array(
+				// 					"type"=> "postback",
+				// 					"label"=> "Add to cart",
+				// 					"data"=> "action=add&itemid=222"
+				// 				),
+				// 				array(
+				// 					"type"=> "uri",
+				// 					"label"=> "View detail",
+				// 					"uri"=> "http://example.com/page/222"
+				// 				)
+				// 			]
 				// 		)
-				// 	)
+				// 	],
+				// 	"imageAspectRatio"=> "rectangle",
+				// 	"imageSize"=> "cover"
 				// )
-
-				"type"=> "template",
-				"altText"=> "this is a carousel template",
-				"template" => array(
-					"type"=> "carousel",
-					"columns"=> [
-						array(
-							"thumbnailImageUrl"=> "https://source.unsplash.com/WLUHO9A_xik",
-							"imageBackgroundColor"=> "#FFFFFF",
-							"title"=> "this is menu",
-							"text"=> "description",
-							"defaultAction"=> array(
-								"type"=> "uri",
-								"label"=> "View detail",
-								"uri"=> "http://example.com/page/123"
-							),
-							"actions"=> [
-								array(
-									"type"=> "postback",
-									"label"=> "Buy",
-									"data"=> "action=buy&itemid=111"
-								),
-								array(
-									"type"=> "postback",
-									"label"=> "Add to cart",
-									"data"=> "action=add&itemid=111"
-								),
-								array(
-									"type"=> "uri",
-									"label"=> "View detail",
-									"uri"=> "http://example.com/page/111"
-								)
-							]
-						),
-						array(
-							"thumbnailImageUrl"=> "https://source.unsplash.com/collection/190727",
-							"imageBackgroundColor"=> "#000000",
-							"title"=> "this is menu",
-							"text"=> "description",
-							"defaultAction"=> array(
-								"type"=> "uri",
-								"label"=> "View detail",
-								"uri"=> "http://example.com/page/222"
-							),
-							"actions"=> [
-								array(
-									"type"=> "postback",
-									"label"=> "Buy",
-									"data"=> "action=buy&itemid=222"
-								),
-								array(
-									"type"=> "postback",
-									"label"=> "Add to cart",
-									"data"=> "action=add&itemid=222"
-								),
-								array(
-									"type"=> "uri",
-									"label"=> "View detail",
-									"uri"=> "http://example.com/page/222"
-								)
-							]
-						)
-					],
-					"imageAspectRatio"=> "rectangle",
-					"imageSize"=> "cover"
-				)
 			);
 
 			// Make a POST Request to Messaging API to reply to sender
