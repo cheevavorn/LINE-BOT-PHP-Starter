@@ -41,11 +41,11 @@ if (!is_null($events['events'])) {
 				
 				// image
 				"type" => "imagemap",
-				"baseUrl" => "https://github.com/line/line-bot-sdk-go/blob/master/examples/kitchensink/static/rich/460",
+				"baseUrl" => "http://lark-trip.com/wp-content/uploads/2014/12/45210_201310311522151lnzy_thumb.jpg?_ignored=",
 				"altText" => "This is an imagemap",
 				"baseSize" => array(
-					"height"=> 1040,
-					"width"=> 1040
+					"height"=> 405,
+					"width"=> 405
 				),
 				"actions" => array(
 					array(
