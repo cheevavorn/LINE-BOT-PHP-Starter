@@ -39,102 +39,132 @@ if (!is_null($events['events'])) {
 				// "latitude"=> 35.65910807942215,
 				// "longitude"=> 139.70372892916203
 				
-				"type"=> "imagemap",
-				"baseUrl"=> "https://source.unsplash.com/random",
-				"altText"=> "This is an imagemap",
-				"baseSize"=> array(
-					"height"=> 1040,
-					"width"=> 1040
-				),
-				"actions"=> array(
-					array(
-						"type"=> "uri",
-						"linkUri"=> "https://pea.co.th/",
-						"area"=> array(
-							"x"=> 0,
-							"y"=> 0,
-							"width"=> 520,
-							"height"=> 1040
-						)
-					),
-					array(
-						"type"=> "message",
-						"text"=> "Hello",
-						"area"=> array(
-							"x"=> 520,
-							"y"=> 0,
-							"width"=> 520,
-							"height"=> 1040
-						)
-					)
-				)
+				// imageMap
+				// "type"=> "imagemap",
+				// "baseUrl"=> "https://source.unsplash.com/random",
+				// "altText"=> "This is an imagemap",
+				// "baseSize"=> array(
+				// 	"height"=> 1040,
+				// 	"width"=> 1040
+				// ),
+				// "actions"=> array(
+				// 	array(
+				// 		"type"=> "uri",
+				// 		"linkUri"=> "https://pea.co.th/",
+				// 		"area"=> array(
+				// 			"x"=> 0,
+				// 			"y"=> 0,
+				// 			"width"=> 520,
+				// 			"height"=> 1040
+				// 		)
+				// 	),
+				// 	array(
+				// 		"type"=> "message",
+				// 		"text"=> "Hello",
+				// 		"area"=> array(
+				// 			"x"=> 520,
+				// 			"y"=> 0,
+				// 			"width"=> 520,
+				// 			"height"=> 1040
+				// 		)
+				// 	)
+				// )
 
 				// template
-				// "type"=> "template",
-				// "altText"=> "this is a carousel template",
-				// "template" => array(
-				// 	"type"=> "carousel",
-				// 	"columns"=> [
-				// 		array(
-				// 			"thumbnailImageUrl"=> "https://source.unsplash.com/WLUHO9A_xik",
-				// 			"imageBackgroundColor"=> "#FFFFFF",
-				// 			"title"=> "this is menu",
-				// 			"text"=> "description",
-				// 			"defaultAction"=> array(
-				// 				"type"=> "uri",
-				// 				"label"=> "View detail",
-				// 				"uri"=> "http://example.com/page/123"
-				// 			),
-				// 			"actions"=> [
-				// 				array(
-				// 					"type"=> "postback",
-				// 					"label"=> "Buy",
-				// 					"data"=> "action=buy&itemid=111"
-				// 				),
-				// 				array(
-				// 					"type"=> "postback",
-				// 					"label"=> "Add to cart",
-				// 					"data"=> "action=add&itemid=111"
-				// 				),
-				// 				array(
-				// 					"type"=> "uri",
-				// 					"label"=> "View detail",
-				// 					"uri"=> "http://example.com/page/111"
-				// 				)
-				// 			]
-				// 		),
-				// 		array(
-				// 			"thumbnailImageUrl"=> "https://source.unsplash.com/collection/190727",
-				// 			"imageBackgroundColor"=> "#000000",
-				// 			"title"=> "this is menu",
-				// 			"text"=> "description",
-				// 			"defaultAction"=> array(
-				// 				"type"=> "uri",
-				// 				"label"=> "View detail",
-				// 				"uri"=> "http://example.com/page/222"
-				// 			),
-				// 			"actions"=> [
-				// 				array(
-				// 					"type"=> "postback",
-				// 					"label"=> "Buy",
-				// 					"data"=> "action=buy&itemid=222"
-				// 				),
-				// 				array(
-				// 					"type"=> "postback",
-				// 					"label"=> "Add to cart",
-				// 					"data"=> "action=add&itemid=222"
-				// 				),
-				// 				array(
-				// 					"type"=> "uri",
-				// 					"label"=> "View detail",
-				// 					"uri"=> "http://example.com/page/222"
-				// 				)
-				// 			]
-				// 		)
-				// 	],
-				// 	"imageAspectRatio"=> "rectangle",
-				// 	"imageSize"=> "cover"
-				// )
+				"type"=> "template",
+				"altText"=> "this is a carousel template",
+				"template" => array(
+					"type"=> "carousel",
+					"columns"=> [
+						array(
+							"thumbnailImageUrl"=> "https://source.unsplash.com/WLUHO9A_xik",
+							"imageBackgroundColor"=> "#FFFFFF",
+							"title"=> "this is menu",
+							"text"=> "description",
+							"defaultAction"=> array(
+								"type"=> "uri",
+								"label"=> "View detail",
+								"uri"=> "http://example.com/page/123"
+							),
+							"actions"=> [
+								array(
+									"type"=> "postback",
+									"label"=> "Buy",
+									"data"=> "action=buy&itemid=111"
+								),
+								array(
+									"type"=> "postback",
+									"label"=> "Add to cart",
+									"data"=> "action=add&itemid=111"
+								),
+								array(
+									"type"=> "uri",
+									"label"=> "View detail",
+									"uri"=> "http://example.com/page/111"
+								)
+							]
+						),
+						array(
+							"thumbnailImageUrl"=> "https://source.unsplash.com/collection/190727",
+							"imageBackgroundColor"=> "#000000",
+							"title"=> "this is menu",
+							"text"=> "description",
+							"defaultAction"=> array(
+								"type"=> "uri",
+								"label"=> "View detail",
+								"uri"=> "http://example.com/page/222"
+							),
+							"actions"=> [
+								array(
+									"type"=> "postback",
+									"label"=> "Buy",
+									"data"=> "action=buy&itemid=222"
+								),
+								array(
+									"type"=> "postback",
+									"label"=> "Add to cart",
+									"data"=> "action=add&itemid=222"
+								),
+								array(
+									"type"=> "uri",
+									"label"=> "View detail",
+									"uri"=> "http://example.com/page/222"
+								)
+							]
+						)
+						),
+						array(
+							"thumbnailImageUrl"=> "https://source.unsplash.com/collection/190720",
+							"imageBackgroundColor"=> "#000000",
+							"title"=> "this is menu",
+							"text"=> "description",
+							"defaultAction"=> array(
+								"type"=> "uri",
+								"label"=> "View detail",
+								"uri"=> "http://example.com/page/222"
+							),
+							"actions"=> [
+								array(
+									"type"=> "postback",
+									"label"=> "Buy",
+									"data"=> "action=buy&itemid=222"
+								),
+								array(
+									"type"=> "postback",
+									"label"=> "Add to cart",
+									"data"=> "action=add&itemid=222"
+								),
+								array(
+									"type"=> "uri",
+									"label"=> "View detail",
+									"uri"=> "http://example.com/page/222"
+								)
+							]
+						)
+					],
+					"imageAspectRatio"=> "rectangle",
+					"imageSize"=> "contain"
+				)
 			);
 
 			// Make a POST Request to Messaging API to reply to sender
