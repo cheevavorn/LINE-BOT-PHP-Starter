@@ -133,7 +133,7 @@ if (!is_null($events['events'])) {
 							]
 						),
 						array(
-							"thumbnailImageUrl"=> "https://source.unsplash.com/collection/190720",
+							"thumbnailImageUrl"=> "https://source.unsplash.com/collection/1907600",
 							"imageBackgroundColor"=> "#000000",
 							"title"=> "this is menu",
 							"text"=> "description",
@@ -162,7 +162,7 @@ if (!is_null($events['events'])) {
 						)
 					],
 					"imageAspectRatio"=> "rectangle",
-					"imageSize"=> "contain"
+					"imageSize"=> "cover"
 				)
 			);
 
