@@ -9,10 +9,4 @@
   $conn = new mysqli($server, $username, $password, $db);
   if(!$conn){
     die("error");
-   }
-  $query_str = "SELECT * FROM tbl_user WHERE status = 'A'";
-  $result = $conn->query($query_str);
-  while($row = $result->fetch_assoc()){
-    echo $row['id']." ".$row['username']." ".$row['password']."<br/>";
   }
-?>
